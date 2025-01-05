@@ -2,60 +2,98 @@
 
 CargoPilot to nowoczesny system zarządzania flotą i śledzenia ładunków.
 
-## Instalacja
+## 🚀 Szybki start
 
+### Wymagania
+
+- Node.js 18+
+- pnpm (zalecane) lub npm
+
+### Instalacja
+
+1. Sklonuj repozytorium:
 ```bash
-# Instalacja zależności
-pnpm install
-
-# Uruchomienie w trybie deweloperskim
-pnpm run dev
-
-# Budowanie projektu
-pnpm run build
+git clone https://github.com/Karoll97/CargoPilot.git
+cd CargoPilot
 ```
 
-## Struktura projektu
+2. Zainstaluj zależności:
+```bash
+pnpm install
+```
+
+3. Uruchom aplikację w trybie deweloperskim:
+```bash
+pnpm run dev
+```
+
+Aplikacja będzie dostępna pod adresem: `http://localhost:5173`
+
+## 📁 Struktura projektu
 
 ```
 /src
   /components
-    /ui - komponenty shadcn/ui
-    /layout - komponenty układu strony (Navbar, Sidebar)
-    /vehicles - komponenty związane z pojazdami
-      /forms - formularze
-      /details - szczegóły pojazdów
-    /orders - komponenty związane ze zleceniami
-      /views - widoki list i zestawień
-      /details - szczegóły zleceń
-  /pages - strony aplikacji
-  /utils - funkcje pomocnicze
-  /styles - style globalne
+    /ui           # Komponenty shadcn/ui
+    /layout       # Komponenty układu strony (Navbar, Sidebar)
+    /vehicles     # Komponenty związane z pojazdami
+      /forms     # Formularze
+      /details   # Szczegóły pojazdów
+    /orders      # Komponenty związane ze zleceniami
+      /views     # Widoki list i zestawień
+      /details   # Szczegóły zleceń
+  /pages         # Strony aplikacji
+  /utils         # Funkcje pomocnicze
+  /styles        # Style globalne
 ```
 
-## Technologie
+## 🛠️ Technologie
 
 - React 18
 - TypeScript
 - Tailwind CSS
-- shadcn/ui
-- Vite
-- React Router Dom
-- Recharts
+- shadcn/ui - System komponentów
+- Vite - Build tool
+- React Router Dom - Routing
+- Recharts - Wykresy i wizualizacje danych
 
-## Funkcjonalności
+## ✨ Główne funkcjonalności
 
-- ✅ Zarządzanie pojazdami (dodawanie, edycja, podgląd)
-- ✅ Zarządzanie zleceniami transportowymi
-- ✅ System dokumentów i załączników
-- ✅ Śledzenie statusów i historii
-- ✅ Statystyki i raporty
+### Zarządzanie pojazdami
+- ✅ Dodawanie i edycja pojazdów
+- ✅ Szczegółowe informacje o pojeździe
+- ✅ Historia przeglądów i ubezpieczeń
+- ✅ Zarządzanie dokumentami
 
-## Rozwój projektu
+### Zarządzanie zleceniami
+- ✅ Tworzenie i edycja zleceń
+- ✅ Śledzenie statusu realizacji
+- ✅ Historia zmian
+- ✅ Generowanie dokumentów transportowych
 
-Projekt jest w aktywnym rozwoju. Planowane funkcjonalności:
+### Monitoring i statystyki
+- ✅ Statystyki wykorzystania floty
+- ✅ Raporty kosztów
+- ✅ Historia przebiegu
+
+## 🚧 W planach
 
 - [ ] System powiadomień
 - [ ] Integracja z mapami
 - [ ] Aplikacja mobilna dla kierowców
 - [ ] Moduł rozliczeń i fakturowania
+- [ ] Integracja z systemami zewnętrznymi
+
+## 🤝 Współpraca
+
+Zapraszamy do współpracy! Jeśli chcesz pomóc w rozwoju projektu:
+
+1. Zrób fork repozytorium
+2. Stwórz branch z nową funkcjonalnością (`git checkout -b feature/AmazingFeature`)
+3. Zrób commit swoich zmian (`git commit -m 'Add some AmazingFeature'`)
+4. Push do brancha (`git push origin feature/AmazingFeature`)
+5. Otwórz Pull Request
+
+## 📝 Licencja
+
+Projekt jest rozpowszechniany na licencji MIT. Zobacz plik `LICENSE` po więcej informacji.
