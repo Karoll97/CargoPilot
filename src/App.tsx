@@ -17,18 +17,11 @@ const App = () => {
       <Layout>
         <React.Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            {/* Redirect from root to dashboard */}
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
-            
-            {/* Dashboard */}
             <Route path="/dashboard" element={<Dashboard />} />
-            
-            {/* Vehicles */}
             <Route path="/vehicles" element={<VehiclesList />} />
             <Route path="/vehicles/add" element={<AddVehicle />} />
             <Route path="/vehicles/:id" element={<VehicleDetails />} />
-            
-            {/* Orders */}
             <Route path="/orders" element={<OrdersList />} />
             <Route path="/orders/add" element={<AddOrder />} />
             <Route path="/orders/:id" element={<OrderDetails />} />
