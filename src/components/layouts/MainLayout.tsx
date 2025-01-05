@@ -1,0 +1,1 @@
+[poprzednia zawartość MainLayout.tsx]
